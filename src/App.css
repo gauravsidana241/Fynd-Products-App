@@ -1,0 +1,14 @@
+.form-group {
+  margin-bottom: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  user-select: none;
+}
+
+.hover-effect:hover {
+  color: rgb(64, 64, 64) !important;
+  transform: scale(1.1);
+}
