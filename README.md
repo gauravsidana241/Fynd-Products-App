@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Fynd Products App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a product inventory system designed for e-commerce and retail platforms. The app prioritizes simplicity, making the most of React's features. It's a single-page application that offers essential features: adding, updating, deleting, and fetching products. MongoDB serves as the database, while Express.js powers the creation of RESTful APIs. 
 
-## Available Scripts
+## How to run
 
 In the project directory, you can run:
 
@@ -14,57 +14,28 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### node server.js
+Run this to start your server at PORT 3001
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Features
+The following will include a short walkthrough of the project
 
-### `npm run build`
+###Fetch Product
+When the page is loaded the first time, the useEffect hoook initialises the apps state with the products stored in the MongoDb database. i have implemented proper error handling to check any serverside errors for this process. and once the state is initialised the information is display through the Product component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###Add Product
+You can add new Product by click the + icon in top left
+this will open a Form component where you can add the name, quantity and price.
+the form check if any field is emmpty and if the quantity is with 0-100 otherwise the user prompted reneter the fields in the correcr range.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###Delete Product
+In order to delete a product you can find the trash icon on the bottom right of each product. clicking on this icon will prompt you to confirm delete and if selected yes the product will be deleted from the databasse and react will update the DOM to show the changes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###Update Product
+You can click on the edit details button to edit the details of a product. the fields are preset to the prev values so you perform the necessary changes. i have implented error checking to check if the uer is passsing any empty fields. after updating react will update the DOM to show the new changes
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Future scope
+The app can be enhanced by allowing the user to upload images of the product.
+Allowing the fields such as Exlusive! Limited sale! etc as radio button and then displaying them on each product card
+Checking the quantity to show "Only 2 items left" when quantity is less than eg. 3
+Filter option to filter the products shown.
