@@ -14,10 +14,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### node server.js
+### `node server.js`
+
 Run this to start your server at PORT 3001
 
 ## Project Features
+
 The following will include a short walkthrough of the project
 
 ### Fetch Product
