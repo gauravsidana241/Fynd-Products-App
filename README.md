@@ -37,10 +37,7 @@ In order to delete a product you can find the trash icon on the bottom right of 
 You can click on the edit details button to edit the details of a product. the fields are preset to the prev values so you perform the necessary changes. i have implented error checking to check if the uer is passsing any empty fields. after updating react will update the DOM to show the new changes
 
 ## Future scope
-The app can be enhanced by allowing the user to upload images of the product.
-
-Allowing the fields such as Exlusive! Limited sale! etc as radio button and then displaying them on each product card.
-
-Checking the quantity to show "Only 2 items left" when quantity is less than eg. 3.
-
+The app can be enhanced by allowing the user to upload images of the product.\
+Allowing the fields such as Exlusive! Limited sale! etc as radio button and then displaying them on each product card.\
+Checking the quantity to show "Only 2 items left" when quantity is less than eg. 3.\
 Filter option to filter the products shown.
