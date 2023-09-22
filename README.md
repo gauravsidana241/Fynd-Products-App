@@ -1,6 +1,6 @@
 # Fynd Products App
 
-This is a product inventory system designed for e-commerce and retail platforms. The app prioritizes simplicity, making the most of React's features. It's a single-page application that offers essential features: adding, updating, deleting, and fetching products. MongoDB serves as the database, while Express.js powers the creation of RESTful APIs. 
+This is a product inventory system designed for e-commerce and retail platforms. The app prioritizes simplicity, making the most of React's features. It's a single-page application that offers essential features: adding, updating, deleting, and fetching products. MongoDB serves as the database, Express.js powers the creation of RESTful APIs and Bootstrap is used for CSS styling.
 
 ## How to run
 
