@@ -39,6 +39,6 @@ You can click on the edit details button to edit the details of a product. the f
 
 ## Future scope
 The app can be enhanced by allowing the user to upload images of the product. Currently I have used a place holder image\
-Allowing the fields such as Exlusive! Limited sale! etc as radio button and then displaying them on each product card.\
+Allowing for fields such as Exlusive! Limited sale! etc as radio button and then displaying them on each product card.\
 Checking the quantity to show "Only 2 items left" when quantity is less than eg. 3.\
 Filter option to filter the products shown.
