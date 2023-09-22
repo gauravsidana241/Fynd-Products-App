@@ -11,8 +11,7 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes.
 
 ### `node server.js`
 
@@ -29,6 +28,7 @@ When the page is loaded the first time, the useEffect hoook initialises the apps
 You can add new Product by click the + icon in top left
 this will open a Form component where you can add the name, quantity and price.
 the form check if any field is emmpty and if the quantity is with 0-100 otherwise the user prompted reneter the fields in the correcr range.
+![image](https://github.com/gauravsidana241/Fynd-Products-App/assets/92263871/5690f53a-c92e-406c-b89d-1428686f92b4)
 
 ### Delete Product
 In order to delete a product you can find the trash icon on the bottom right of each product. clicking on this icon will prompt you to confirm delete and if selected yes the product will be deleted from the databasse and react will update the DOM to show the changes
@@ -37,7 +37,7 @@ In order to delete a product you can find the trash icon on the bottom right of 
 You can click on the edit details button to edit the details of a product. the fields are preset to the prev values so you perform the necessary changes. i have implented error checking to check if the uer is passsing any empty fields. after updating react will update the DOM to show the new changes
 
 ## Future scope
-The app can be enhanced by allowing the user to upload images of the product.\
+The app can be enhanced by allowing the user to upload images of the product. Currently I have used a place holder image\
 Allowing the fields such as Exlusive! Limited sale! etc as radio button and then displaying them on each product card.\
 Checking the quantity to show "Only 2 items left" when quantity is less than eg. 3.\
 Filter option to filter the products shown.
