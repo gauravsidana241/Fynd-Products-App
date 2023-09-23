@@ -3,8 +3,8 @@ import { useState } from "react";
 
 function Addform({ onAdd }) {
   const [name, setName] = useState("");
-  const [quantity, setQuantity] = useState();
-  const [price, setPrice] = useState();
+  const [quantity, setQuantity] = useState("");
+  const [price, setPrice] = useState("");
 
   const onSubmit = (e) => {
     e.preventDefault();

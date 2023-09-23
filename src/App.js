@@ -16,6 +16,7 @@ function App() {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
+    margineTop: "20px",
   };
 
   async function fetchProducts() {
@@ -99,7 +100,7 @@ function App() {
         console.log("succesffully updated: ", data);
         setProducts((prevProducts) => {
           return prevProducts.map((product) => {
-            if (product._id == itemId) {
+            if (product._id === itemId) {
               return { ...product, ...updatedProducts };
             }
             return product;
@@ -115,12 +116,26 @@ function App() {
     <div className="App">
       <Navbar showAdd={showAdd} onShow={() => setShowAdd(!showAdd)} />
       {showAdd && <Addform onAdd={addProduct} />}
-      <div style={containerStyle}>
-        <Products
-          product={products}
-          onDelete={deleteProduct}
-          onUpdate={updateProduct}
-        />
+      <div className="container-md" style={containerStyle}>
+        <table className="table table-hover">
+          <thead className="thread-dark">
+            <tr>
+              <th scope="col">Name</th>
+              {/* <th scope="col">Product Id</th> */}
+              <th scope="col">Stock Quantity</th>
+              <th scope="col">Price</th>
+              <th scope="col">edit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <Products
+              product={products}
+              onDelete={deleteProduct}
+              onUpdate={updateProduct}
+            />
+          </tbody>
+        </table>
       </div>
     </div>
   );
