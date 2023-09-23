@@ -27,7 +27,7 @@ When the page is loaded for the first time, the useEffect hook initializes the a
 
 You can add a new product by clicking the + icon in the top left corner. This will open a Form component where you can input the name, quantity, and price. The form checks if any field is empty and whether the quantity is within the range of 0-100. If any field is empty or the quantity is not in the correct range, the user will be prompted to re-enter the fields with the correct information.\
 ![addPic](https://github.com/gauravsidana241/Fynd-Products-App/assets/92263871/8b09def0-a51f-4ead-bb9d-3aaf7efb1a92)\
-![image](https://github.com/gauravsidana241/Fynd-Products-App/assets/92263871/46c673c0-9dad-49b2-9ec6-6ffb39ee7c2a)\
+![image](https://github.com/gauravsidana241/Fynd-Products-App/assets/92263871/46c673c0-9dad-49b2-9ec6-6ffb39ee7c2a)
 
 Add form in list-view
 ![image](https://github.com/gauravsidana241/Fynd-Products-App/assets/92263871/4825b20e-347d-427f-a34f-eb0c953a71af)
